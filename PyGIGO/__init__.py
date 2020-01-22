@@ -9,10 +9,6 @@ class CsvHandler:
         self._outfile = open(outfile, "a" if self.append else "w", newline="")
         self.reader = csv.DictReader(self._infile)
         self.writer = csv.DictWriter(self._outfile, fieldnames=fields)
-        self.extra_init()
-
-    def extra_init(self):
-        pass
 
     def process(self):
         if self.existed and self.append:
