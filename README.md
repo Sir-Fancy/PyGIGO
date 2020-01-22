@@ -9,11 +9,10 @@ At its core, it's just a wrapper for Python's `csv` library's DictReader/DictWri
 Simply override the process_line function. That's it. That function is run for each line in your input file, so when you
 have the `out` dictionary ready, just return that! Easy peasy. Check the example#.py files for usage examples or read
 below:
-
-_(note: tables have been stylized and do not output this way)_
 _______
 
 ## Examples
+_(note: tables have been stylized and do not output this way)_
 ### example1.py
 
     from PyGIGO import CsvHandler
