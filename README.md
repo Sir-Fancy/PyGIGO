@@ -3,7 +3,7 @@ _______
 
 ## Intro
 This project was designed to fit a necessity for easy CSV processing without having to whip up the same code every time.
-At its core, it's a wrapper for Python's `csv` library. Only tested on Python 3.
+At its core, it's just a wrapper for Python's `csv` library's DictReader/DictWriter. Only tested on Python 3.
 
 ## Usage
 Simply override the process_line function. That's it. That function is run for each line in your input file, so when you
