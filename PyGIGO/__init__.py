@@ -17,7 +17,8 @@ class CsvHandler:
             self.writer.writeheader()
         for garbageIn in self.reader:
             garbageOut = self.process_line(garbageIn)
-            self.writer.writerow(garbageOut)
+            if garbageOut is not None:
+                self.writer.writerow(garbageOut)
         self._infile.close()
         self._outfile.close()
 
